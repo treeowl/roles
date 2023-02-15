@@ -11,12 +11,14 @@ homepage:      http://github.com/matt-noonan/roles/
 bug-reports:   http://github.com/matt-noonan/roles/issues
 copyright:     Copyright (C) 2017 Matt Noonan, (C) 2014 Edward A. Kmett
 synopsis:      Composable class-based roles
-description:   Composable class-based roles
+description:   Classes for expressing roles of type arguments
 build-type:    Simple
 extra-source-files:
   .vim.custom
   CHANGELOG.markdown
   README.md
+tested-with:   GHC == 8.0.2, GHC == 8.2.2, GHC == 8.4.4, GHC == 8.6.4, GHC == 8.8.4,
+               GHC == 8.10.7, GHC == 9.0.2, GHC == 9.2.6, GHC == 9.4.4, GHC == 9.6.1
 
 source-repository head
   type: git
