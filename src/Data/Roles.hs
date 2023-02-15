@@ -16,7 +16,6 @@ import Data.Monoid
 import Data.Proxy
 import Data.Type.Coercion
 import Data.Coerce
-import Unsafe.Coerce
 import Data.Map
 import Data.IntMap
 
@@ -45,7 +44,7 @@ instance Phantom (Const a)
 
 -- * Data.Type.Coercion
 
-instance Representational Coercion     where rep = unsafeCoerce
+instance Representational Coercion     where rep Coercion = Coercion
 instance Representational (Coercion a) where rep Coercion = Coercion
 
 -- * Prelude
